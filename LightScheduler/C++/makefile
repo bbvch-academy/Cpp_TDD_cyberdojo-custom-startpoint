@@ -1,4 +1,4 @@
-CXXFLAGS += -I. -std=c++17 -Wpedantic -Wall -Wextra -Werror
+CXXFLAGS += -I. -std=c++17 -Wpedantic -Wall -Wextra -Werror -fno-delete-null-pointer-checks
 GTEST_LIBS = -lgtest -lgmock -lgmock_main -pthread
 
 HPP_FILES = $(wildcard *.hpp)
@@ -19,4 +19,3 @@ test: makefile $(CPP_FILES) $(COMPILED_HPP_FILES)
 
 %.compiled_hpp: %.hpp
 	@$(CXX) -x c++ $(CXXFLAGS) -c -o $@ $<
-	
