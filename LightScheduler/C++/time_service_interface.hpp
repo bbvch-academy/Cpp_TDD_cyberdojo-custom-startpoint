@@ -15,7 +15,7 @@ public:
         int month;
         int year;
         int day_of_week;
-    };s
+    };
 
     using wackup_callback = std::function<void()>;
 
