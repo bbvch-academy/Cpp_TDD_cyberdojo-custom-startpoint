@@ -6,7 +6,7 @@
 class ILightController
 {
 public:
-    virtual ~ILightController() {};
+    virtual ~ILightController() = default;
     virtual void turn_on(uint32_t id) = 0;
     virtual void turn_off(uint32_t id) = 0;
 };

@@ -21,7 +21,7 @@ public:
     using wakeup_callback = std::function<void()>;
     using callback_handler = std::unique_ptr<size_t>;
 
-    virtual ~ITimeService() {};
+    virtual ~ITimeService() = default;
     virtual time_t get_time() const = 0;
     virtual callback_handler set_periodic_alarm(std::chrono::minutes period, wakeup_callback callback) = 0;
     virtual void unset_periodic_alarm(callback_handler handler) = 0;
