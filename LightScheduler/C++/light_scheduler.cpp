@@ -1,6 +1,6 @@
 #include "light_scheduler.hpp"
 
-int answer()
+namespace home_automation
 {
-    return 6 * 9;
+  // TODO
 }

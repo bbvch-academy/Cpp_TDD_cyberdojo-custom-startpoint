@@ -5,9 +5,9 @@ using namespace ::testing;
 
 namespace {
 
-TEST(Hiker, Life_the_universe_and_everything)
+TEST(LightScheduler, empty_test)
 {
-    ASSERT_THAT(answer(), Eq(42));
+    ASSERT_FALSE(true);
 }
 
 }
