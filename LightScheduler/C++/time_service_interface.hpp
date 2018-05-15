@@ -19,10 +19,11 @@ public:
     };
 
     using wakeup_callback = std::function<void()>;
+    using callback_handle = std::shared_ptr<void>;
 
     virtual ~ITimeService() = default;
     virtual time_t current_time() const = 0;
-    virtual void start_periodic_alarm(std::chrono::minutes period,
+    virtual callback_handle start_periodic_alarm(std::chrono::minutes period,
                                       wakeup_callback callback) = 0;
     virtual void stop_periodic_alarm() = 0;
 };
