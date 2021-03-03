@@ -1,6 +1,6 @@
 {
-  "display_name": "C++ (g++), GoogleMock",
-
+  "image_name": "cyberdojofoundation/gpp_googlemock",
+  "display_name": "Light Scheduler, C++ (g++) GoogleMock)",
   "visible_filenames": [
     "light_controller_interface.hpp",
     "time_service_interface.hpp",
@@ -11,10 +11,11 @@
     "makefile",
     "cyber-dojo.sh"
   ],
-
-  "image_name": "cyberdojofoundation/gpp_googlemock",
-
-  "filename_extension" : ".cpp",
-
-  "runner_choice": "stateless"
+  "highlight_filenames": [
+    "light_scheduler.cpp",
+    "light_scheduler.hpp",
+    "light_scheduler.tests.cpp"
+  ],
+  "tab_size": 4,
+  "filename_extension" : [".cpp", ".hpp" ]
 }
